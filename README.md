@@ -89,6 +89,9 @@ public class AESdll {
 }
 ```
 
+note： aesencryopt 为你当前的模块的名字
+
+目录结构
 
 
 

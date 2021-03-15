@@ -6,7 +6,7 @@
 
 # 使用
 
-### android中使用 (限于 android arm64-v8a)
+### android中使用 (限于 android arm64-v8a,只编译此架构的so库)
 
 - 在项目的build.gradle 下面添加仓库地址
 ```

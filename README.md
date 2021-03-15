@@ -6,7 +6,7 @@
 
 # 使用
 
-### android中使用
+### android中使用 (限于 android arm64-v8a)
 
 - 在项目的build.gradle 下面添加仓库地址
 ```
@@ -19,7 +19,7 @@ allprojects {
 }
 ```
 
-- 在项目中引用
+- 在模块中引用
 > api 'com.hub168.yh:aesEncrypt-android:1.0.0@aar'
 
 - 方法

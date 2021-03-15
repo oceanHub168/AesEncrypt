@@ -22,13 +22,29 @@ allprojects {
 - 在模块中引用
 > api 'com.hub168.yh:aesEncrypt-android:1.0.0@aar'
 
-- 方法
+- 方法说明
 
-// 加密 <br>
-public static native byte[] nativeEncryptStr(byte[] plainText, byte[] pwdBytes);
+public class EncryptWarp {
+    
+    /**
+     * 加密
+     * @param plainText  要加密的文本
+     * @param pwdBytes  加密密码
+     * @return
+     */
+    public static native byte[] nativeEncryptStr(byte[] plainText, byte[] pwdBytes);
 
-// 解密 <br>
-public static native byte[] nativeDecryptStr(byte[] plainText, byte[] pwdBytes);
+
+    /**
+     * 解密
+     * @param plainText  要解密的文本
+     * @param pwdBytes   跟加密密码一致
+     * @return
+     */
+    public static native byte[] nativeDecryptStr(byte[] plainText, byte[] pwdBytes);
+    
+}
+
 
 
 ### 在java程序中使用封装的cryptopp库,即dll动态库
